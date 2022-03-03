@@ -6,8 +6,9 @@ public class LinkedList {
 	 * 1.Creating node head
 	 * 2.creating variables
 	 * 3.creating method to add the first value to stack
-	 * 4.method to delete first value till the stack gets empty
-	 * 5.created method to diplay the linkedlist/stack
+	 * 4.creating method to add the last value to stack
+	 * 5.method to delete first value till the stack gets empty
+	 * 6.created method to diplay the linkedlist/stack
 	 * =================================================
 	 */
 
@@ -42,7 +43,26 @@ public class LinkedList {
 	}
 
 	/*
-	 * 4.method to delete first value till the stack gets empty
+	 * 4.creating method to add the last value to stack
+	 */
+
+	public void addLast(Object data) {
+		Node newNode = new Node(data);
+		if (head == null)
+			head = newNode;
+		else if (head.next == null)
+			head.next = newNode;
+		else {
+			Node temp = head;
+			while (temp.next != null) {
+				temp = temp.next;
+			}
+			temp.next = newNode;
+		}
+	}
+
+	/*
+	 * 5.method to delete first value till the stack gets empty
 	 */
 	public void deleteFirst() {
 		if (head == null)
@@ -53,7 +73,7 @@ public class LinkedList {
 	}
 
 	/*
-	 * 5.created method to diplay the linkedlist/stack
+	 * 6.created method to diplay the linkedlist/stack
 	 */
 	public void display() {
 		if (head == null)
