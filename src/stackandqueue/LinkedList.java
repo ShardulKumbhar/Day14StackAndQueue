@@ -6,12 +6,13 @@ public class LinkedList {
 	 * 1.Creating node head
 	 * 2.creating variables
 	 * 3.creating method to add the first value to stack
-	 * 4.created method to diplay the linkedlist/stack
+	 * 4.method to delete first value till the stack gets empty
+	 * 5.created method to diplay the linkedlist/stack
 	 * =================================================
 	 */
 
 	/*
-	 *1.Creating node head
+	 * 1.Creating node head
 	 */
 	Node head;
 
@@ -41,11 +42,22 @@ public class LinkedList {
 	}
 
 	/*
-	 * 4.created method to diplay the linkedlist/stack
+	 * 4.method to delete first value till the stack gets empty
+	 */
+	public void deleteFirst() {
+		if (head == null)
+			System.out.println("No elements present to delete");
+		else
+			System.out.println("Poping value");
+		head = head.next;
+	}
+
+	/*
+	 * 5.created method to diplay the linkedlist/stack
 	 */
 	public void display() {
 		if (head == null)
-			System.out.println("No elements to display");
+			System.out.println("The Stack is empty");
 		else {
 			Node temp = head;
 			while (temp.next != null) {

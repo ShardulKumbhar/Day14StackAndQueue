@@ -6,9 +6,9 @@ public class Stack {
 	 * creating Object
 	 */
 	LinkedList linkedList = new LinkedList();
-	
+
 	/*
-	 * calling method through object
+	 * pushing the value at first place calling method through object
 	 */
 	public void push(Object data) {
 		linkedList.addFirst(data);
@@ -20,6 +20,13 @@ public class Stack {
 	public void displayStack() {
 		linkedList.display();
 	}
-}
 
+	/*
+	 * deleting top value in the stack till stack gets empty
+	 */
+	public void pop() {
+		while (linkedList.head != null)
+			linkedList.deleteFirst();
+	}
+}
 
