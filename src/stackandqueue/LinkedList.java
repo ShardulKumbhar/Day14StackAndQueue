@@ -68,7 +68,7 @@ public class LinkedList {
 		if (head == null)
 			System.out.println("No elements present to delete");
 		else
-			System.out.println("Poping value");
+			System.out.println("Deleted top value of stack");
 		head = head.next;
 	}
 
