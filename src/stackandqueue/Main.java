@@ -10,7 +10,7 @@ public class Main {
 		 * 1.creating Object an Oject
 		 * 2.Calling method to push value to stack
 		 * 3.calling method to display value of stack
-		 * 4.poping the value till stack gets empty
+		 * 4.peaking and poping the value till stack gets empty
 		 * 5.calling method to display value of stack
 		 * ============================= 
 		 */
@@ -30,14 +30,20 @@ public class Main {
 		 */
 		stack.displayStack();
 		/*
-		 * 4.poping the value till stack gets empty
+		 * 4.peaking and poping the value till stack gets empty
 		 */
-		stack.pop();
+		stack.displayPeak();
+		stack.displaypop();
+		stack.displayPeak();
+		stack.displaypop();
+		stack.displayPeak();
+		stack.displaypop();
+		stack.displayPeak();
+		stack.displayStack();
 		/*
 		 * 5.calling method to display value of stack
 		 */
-		stack.displayStack();
+		// stack.displayStack();
 
 	}
-
 }

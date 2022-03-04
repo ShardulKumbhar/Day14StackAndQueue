@@ -20,13 +20,18 @@ public class Stack {
 	public void displayStack() {
 		linkedList.display();
 	}
+	/*
+	 * calling methord to peaking 1st value of stack
+	 */
+
+	public void displayPeak() {
+		linkedList.peak();
+	}
 
 	/*
 	 * deleting top value in the stack till stack gets empty
 	 */
-	public void pop() {
-		while (linkedList.head != null)
-			linkedList.deleteFirst();
+	public void displaypop() {
+		linkedList.pop();
 	}
 }
-
